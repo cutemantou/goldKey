@@ -5,8 +5,8 @@
   "author": "leilei <1179739037@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "serve": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run serve",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
@@ -15,9 +15,17 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "bankcardinfo": "^2.0.6",
+    "element-ui": "^2.15.6",
+    "js-cookie": "^3.0.1",
+    "js-md5": "^0.7.3",
+    "nprogress": "^0.2.0",
+    "prettier": "^1.12.1",
     "vue": "^2.5.2",
     "vue-axios": "^3.4.0",
-    "vue-router": "^3.0.1"
+    "vue-i18n": "^8.26.8",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

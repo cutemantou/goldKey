@@ -1,7 +1,10 @@
 import axios from 'axios'
 import { baseUrl } from "@/config/env.js";
-import { getToken } from '@/utils/auth';
-import { serialize } from "@/util/util";
+import { getToken } from '@/util/auth.js';
+ import { serialize } from "@/util/util.js";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
+import md5 from "js-md5";
 
 axios.defaults.baseURL = baseUrl;
 //默认超时时间
@@ -12,7 +15,7 @@ axios.defaults.validateStatus = function (status) {
 };
 //跨域请求，允许保存cookie
 axios.defaults.withCredentials = true;
-// NProgress 配置
+// NProgress 配置(禁用进度环)
 NProgress.configure({
   showSpinner: false
 });
