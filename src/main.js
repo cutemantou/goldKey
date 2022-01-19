@@ -8,6 +8,7 @@ import VueAxios from "vue-axios";
 import Element from "element-ui";
 import i18n from './language';
 import store from "./store";
+import basicContainer from "./components/basic-container/index";
 
 Vue.config.productionTip = false
 
@@ -17,6 +18,8 @@ Vue.use(router);
 Vue.use(Element, {
   i18n: (key, value) => i18n.t(key, value)
 });
+//注册全局组件
+Vue.component("basicContainer", basicContainer);
 new Vue({
   el: '#app',
   router,

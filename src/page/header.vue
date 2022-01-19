@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="head">
     <div class="wd1200">
         <span style="margin-left: 100px;font-size: 18px;font-weight: bold;color: #666666;">
@@ -9,6 +10,7 @@
         </div>
         <a href="/page/help/help" class="helpbox" target="_blank"><img src="/images/icon_help.png">帮助</a>
     </div>
+  </div>
     <div class="nav">
     <div class="wd1200">
         <a href="javascript:;" class="logobox"><img src="/images/icon_logo.png"></a>
@@ -36,7 +38,9 @@ export default{
   },
   methods:{
     goDataCenter(){
-        this.$router.push({path:'/home/dataCenter',query:{time:Date.now()}});
+       this.$router.push({path:'/home/dataCenter',query:{time:Date.now()}});
+        // const time=Date.now();
+        // this.$router.push({name:'数据中心',params: { userId: time }})
     }
   }
 }
