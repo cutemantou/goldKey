@@ -1,11 +1,19 @@
 <template>
-  <div style="margin-top:88px;">数据中心</div>
+  <basicContainer>
+    <p>数据中心</p>
+  </basicContainer>
 </template>
 <script>
-
 export default{
-  created(){
-    console.log("数据中心create");
-  }
+   data(){
+     return {
+     };
+   },
+   methods:{
+
+   }
 }
 </script>
+<style>
+
+</style>

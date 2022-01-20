@@ -1,11 +1,19 @@
 <template>
-  <div style="margin-top:88px;">在线购卡</div>
+  <basicContainer>
+    <p>在线购卡</p>
+  </basicContainer>
 </template>
 <script>
-
 export default{
-  created(){
-    console.log("在线购卡create");
-  }
+   data(){
+     return {
+     };
+   },
+   methods:{
+
+   }
 }
 </script>
+<style>
+
+</style>

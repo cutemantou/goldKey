@@ -23,7 +23,7 @@
             <div class="li lnsj" @click="goDataCenter"><span>数据中心</span></div>
             <div class="li zycp"><span>专业定位</span></div>
             <div class="li yhzx"><span>用户中心</span></div>
-            <router-link :to="{name:'在线购卡',path:'/home/onlineBuyCard'}" class="li"><span>在线购卡</span></router-link>
+            <router-link :to="{name:'在线购卡',path:'/onlineBuyCard'}" class="li"><span>在线购卡</span></router-link>
         </div>
     </div>
   </div>  

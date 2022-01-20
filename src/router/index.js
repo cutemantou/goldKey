@@ -13,21 +13,19 @@ export default new Router({
       path: '/home',
       name: '首页',
       component: () =>import('@/page/home/index'),
-      children:[
-          {
-            path: 'dataCenter',
-            name: '数据中心',
-            component: () =>
-            import('@/page/dataCenter/index'),
-          },
-          {
-            path: 'onlineBuyCard',
-            name: '在线购卡',
-            component: () =>
-            import('@/page/onlineBuyCard/index'),
-          }
-      ]
     },
+    {
+      path: '/dataCenter',
+      name: '数据中心',
+      component: () =>
+      import('@/page/dataCenter/index'),
+    },
+    {
+      path: '/onlineBuyCard',
+      name: '在线购卡',
+      component: () =>
+      import('@/page/onlineBuyCard/index'),
+    }
    
   ]
 })
